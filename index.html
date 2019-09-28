@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    //let example = 7.77;
+</body>
+
+<script type='text/javascript'>
+    //alert('I am ready')
+    var one = 22;
+    var two = 3;
+    var add = one + two;
+    var minus = one - two;
+    var multiply = one * two;
+    var divide = one/two;
+	document.write("First No: = " + one + "<br />Second No: = " + two + " <br />");
+	document.write(one + " + " + two + " = " + add + "<br/>");
+	document.write(one + " - " + two + " = " + minus + "<br/>");
+	document.write(one + " * " + two + " = " + multiply + "<br/>");
+	document.write(one + " / " + two + " = " + divide + "<br/>");
+
+    var students = new Array('Amaka', 'Toyin', 'Emma');
+
+    let example = [1, 3, 'boy', 'girl', 5, 7, 10]
+    example.forEach((element) => {
+        //console.log(element)
+    })
+    //console.log(example.toFixed(2))
+    
+    let example1 = [1, 2, true];
+    let example2 = [...example1]; //note this to make example1 unique
+    example2.push(11);
+    console.log(example1);
+    console.log(example2);
+
+    //object.assign
+    let example3 = Object.assign({},example2)
+    console.log(example3)
+
+    //object.create
+    let myself = Object.create({});
+    myself.name = 'Seth';
+    console.log(myself);
+    //example 2
+    let myparish = {
+        isArea : false,
+        intro : function(){
+            console.log(`The name of my church is ${this.nameOfParish} in philip street `)
+        }
+    }
+    let comingKingZone = Object.create(myparish);
+    comingKingZone.nameOfParish = 'Balm_of_Gilead';
+    comingKingZone.intro();
+</script>
+</html>
